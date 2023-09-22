@@ -11,9 +11,9 @@
     <nav>
         <h1>Tiempo Dojo</h1>
         <div class="ciudades">
-            <div>Burbank</div>
-            <div>Chicago</div>
-            <div>Dallas</div>
+            <div onclick="mostrarMensaje(this)">Burbank</div>
+            <div onclick="mostrarMensaje(this)">Chicago</div>
+            <div onclick="mostrarMensaje(this)">Dallas</div>
         </div>
     </nav>
     <main>
@@ -21,7 +21,7 @@
             <div>
                 <h2>San Jose</h2>
             <span>Mostrar Temperatura en:</span>
-            <select class="temperatura">
+            <select onchange="cambiarTemperatura(this)" class="temperatura">
                 <option value="c">ºC</option>
                 <option value="f">ºF</option>
             </select>
@@ -92,7 +92,7 @@
             </p>
         </div>
         <div class="opcion">
-            <button class="aceptar">
+            <button onclick="removerCookie(this)" class="aceptar">
                 I accept
             </button>
         </div>
