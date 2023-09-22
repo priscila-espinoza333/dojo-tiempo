@@ -19,6 +19,12 @@ function cambiarTemperatura(elemento){
             let temperaturaFinal = (temperatura * 1.8)+ 32; // aca hago la formula para pasar de c a f 
             temperaturas[i].innerText = Math.round(temperaturaFinal); // aca estoy sacando el decimal
         }
-
     }
-}
+    else{
+        for(let i = 0; i< temperaturas.length; i++){
+            let temperatura = temperaturas[i].innerText;
+            let temperaturaFinal = (temperatura - 32) / 1.8;
+            temperaturas[i].innerText = Math.round(temperaturaFinal);
+        }
+    }
+ }

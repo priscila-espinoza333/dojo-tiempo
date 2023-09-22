@@ -90,7 +90,13 @@ main{
     width: 70px;
     background-color: rgb(165, 165, 228);
 }
+.aceptar :hover{
+    cursor: pointer;
+}
 
 .ocultar{
     display: none;
+}
+.ciudades :hover{
+    cursor: pointer;
 }
